@@ -13,6 +13,11 @@
 		05C40A49255E722E00F7A69D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05C40A47255E722E00F7A69D /* Main.storyboard */; };
 		05C40A4B255E722E00F7A69D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05C40A4A255E722E00F7A69D /* Assets.xcassets */; };
 		05C40A4E255E722E00F7A69D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05C40A4C255E722E00F7A69D /* LaunchScreen.storyboard */; };
+		05C40A57255E74C300F7A69D /* SecondVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C40A56255E74C300F7A69D /* SecondVC.swift */; };
+		05C40A5E255E791300F7A69D /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C40A5D255E791300F7A69D /* ThirdViewController.swift */; };
+		05C40A63255E887A00F7A69D /* OACameraConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C40A61255E887A00F7A69D /* OACameraConstant.swift */; };
+		05C40A64255E887A00F7A69D /* OACameraManeger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C40A62255E887A00F7A69D /* OACameraManeger.swift */; };
+		05C40A67255E8CE400F7A69D /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C40A66255E8CE400F7A69D /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,11 @@
 		05C40A4A255E722E00F7A69D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		05C40A4D255E722E00F7A69D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		05C40A4F255E722E00F7A69D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		05C40A56255E74C300F7A69D /* SecondVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondVC.swift; sourceTree = "<group>"; };
+		05C40A5D255E791300F7A69D /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
+		05C40A61255E887A00F7A69D /* OACameraConstant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OACameraConstant.swift; sourceTree = "<group>"; };
+		05C40A62255E887A00F7A69D /* OACameraManeger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OACameraManeger.swift; sourceTree = "<group>"; };
+		05C40A66255E8CE400F7A69D /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +66,7 @@
 		05C40A40255E722E00F7A69D /* LuminosityPOC */ = {
 			isa = PBXGroup;
 			children = (
+				05C40A60255E886100F7A69D /* OACameraSetup */,
 				05C40A41255E722E00F7A69D /* AppDelegate.swift */,
 				05C40A43255E722E00F7A69D /* SceneDelegate.swift */,
 				05C40A45255E722E00F7A69D /* ViewController.swift */,
@@ -63,8 +74,20 @@
 				05C40A4A255E722E00F7A69D /* Assets.xcassets */,
 				05C40A4C255E722E00F7A69D /* LaunchScreen.storyboard */,
 				05C40A4F255E722E00F7A69D /* Info.plist */,
+				05C40A56255E74C300F7A69D /* SecondVC.swift */,
+				05C40A5D255E791300F7A69D /* ThirdViewController.swift */,
 			);
 			path = LuminosityPOC;
+			sourceTree = "<group>";
+		};
+		05C40A60255E886100F7A69D /* OACameraSetup */ = {
+			isa = PBXGroup;
+			children = (
+				05C40A61255E887A00F7A69D /* OACameraConstant.swift */,
+				05C40A62255E887A00F7A69D /* OACameraManeger.swift */,
+				05C40A66255E8CE400F7A69D /* Extensions.swift */,
+			);
+			path = OACameraSetup;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +162,11 @@
 			files = (
 				05C40A46255E722E00F7A69D /* ViewController.swift in Sources */,
 				05C40A42255E722E00F7A69D /* AppDelegate.swift in Sources */,
+				05C40A64255E887A00F7A69D /* OACameraManeger.swift in Sources */,
+				05C40A63255E887A00F7A69D /* OACameraConstant.swift in Sources */,
+				05C40A5E255E791300F7A69D /* ThirdViewController.swift in Sources */,
+				05C40A67255E8CE400F7A69D /* Extensions.swift in Sources */,
+				05C40A57255E74C300F7A69D /* SecondVC.swift in Sources */,
 				05C40A44255E722E00F7A69D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -216,7 +244,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -271,7 +299,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -287,12 +315,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S62DA4YQ49;
 				INFOPLIST_FILE = LuminosityPOC/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.innovationm.LuminosityPOC;
+				PRODUCT_BUNDLE_IDENTIFIER = com.oneAssist.oneAssist;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -305,12 +334,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S62DA4YQ49;
 				INFOPLIST_FILE = LuminosityPOC/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.innovationm.LuminosityPOC;
+				PRODUCT_BUNDLE_IDENTIFIER = com.oneAssist.oneAssist;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

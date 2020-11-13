@@ -15,5 +15,24 @@ class ViewController: UIViewController {
     }
 
 
+    
+    @IBAction func luminosityExample(_ sender: Any) {
+        let secondVC = storyboard?.instantiateViewController(withIdentifier: "SecondVC") as! SecondVC
+        self.navigationController?.pushViewController(secondVC, animated: true)
+    }
+    
+    @IBAction func usingCamera(_ sender: Any) {
+        let thirdVC = storyboard?.instantiateViewController(withIdentifier: "ThirdViewController") as! ThirdViewController
+        self.navigationController?.pushViewController(thirdVC, animated: true)
+    }
+
+    @IBAction func usingBackCamera(_ sender: Any) {
+        
+        let thirdVC = storyboard?.instantiateViewController(withIdentifier: "ThirdViewController") as! ThirdViewController
+        thirdVC.cameraPosition = .back
+        self.navigationController?.pushViewController(thirdVC, animated: true)
+        
+    }
+    
 }
 
